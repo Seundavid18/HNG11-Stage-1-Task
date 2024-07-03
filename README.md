@@ -1,3 +1,5 @@
+## Creating Users and Groups on Linux with a Bash Script
+
 ## Overview
 
 Managing users and groups in a Linux environment can be a daunting task, especially when handling multiple users. To simplify this process, you can automate user creation, group assignments, and password management using a Bash script. This article will walk you through creating a script that reads a file containing usernames and group names, creates the necessary users and groups, sets up home directories, and generates secure passwords.
