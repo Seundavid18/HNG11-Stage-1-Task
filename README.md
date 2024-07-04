@@ -23,7 +23,7 @@ This bash script automates the process of creating multiple users and groups on 
 
 ## Installation
 
-1. Clone this repository `https://github.com/Seundavid18/HNG11-Stage-1-Task` or download the `create_users.sh` script.
+1. Clone this repository `https://github.com/Seundavid18/HNG11-Stage-1-Task` or download the `create_user.sh` script.
 2. Make the script executable:
    ```
    chmod +x create_users.sh
@@ -39,7 +39,7 @@ This bash script automates the process of creating multiple users and groups on 
 
 2. Run the script with root privileges:
    ```
-   sudo ./create_users.sh create_users.txt
+   sudo ./create_user.sh create_users.txt
    ```
    Replace `create_users.txt` with the path to your input file.
 
