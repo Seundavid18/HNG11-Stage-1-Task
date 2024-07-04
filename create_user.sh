@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# File: create_users.sh
+# File: create_user.sh
 # Description: This script creates users and groups based on input from a text file.
 # Usage: sudo ./create_users.sh <input-file>
 
@@ -11,7 +11,7 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
-INPUT_FILE="create_users.txt"
+INPUT_FILE="create_user.txt"
 LOG_FILE="/var/log/user_management.log"
 PASSWORD_FILE="/var/secure/user_passwords.csv"
 
