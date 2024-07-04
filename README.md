@@ -31,7 +31,7 @@ This bash script automates the process of creating multiple users and groups on 
 
 ## Usage
 
-1. Create an input file (e.g., `create_users.txt`) with the following format:
+1. Create an input file (e.g., `create_user.txt`) with the following format:
    ```
    username; group1,group2,group3
    ```
@@ -39,9 +39,9 @@ This bash script automates the process of creating multiple users and groups on 
 
 2. Run the script with root privileges:
    ```
-   sudo ./create_user.sh create_users.txt
+   sudo ./create_user.sh create_user.txt
    ```
-   Replace `create_users.txt` with the path to your input file.
+   Replace `create_user.txt` with the path to your input file.
 
 ## Input File sample
 
