@@ -22,15 +22,15 @@ This bash script automates the process of creating multiple users and groups on 
 
 ## Installation
 
-1. Clone this repository `https://github.com/Seundavid18/HNG11-Stage-1-Task` or download the `create_user.sh` script.
+1. Clone this repository or download the `create_users.sh` script.
 2. Make the script executable:
    ```
-   chmod +x create_user.sh
+   chmod +x create_users.sh
    ```
 
 ## Usage
 
-1. Create an input file (e.g., `create_user.txt`) with the following format:
+1. Create an input file (e.g., `users.txt`) with the following format:
    ```
    username; group1,group2,group3
    ```
@@ -38,16 +38,16 @@ This bash script automates the process of creating multiple users and groups on 
 
 2. Run the script with root privileges:
    ```
-   sudo ./create_user.sh create_user.txt
+   sudo ./create_users.sh users.txt
    ```
-   Replace `create_user.txt` with the path to your input file.
+   Replace `users.txt` with the path to your input file.
 
 ## Input File sample
 
 ```
-seun; dev,linuxgrp
-david; devops
-segun; dev,devops,linuxgrp
+light; sudo,dev,www-data
+idimma; sudo
+mayowa; dev,www-data
 ```
 
 - Each line represents a user
