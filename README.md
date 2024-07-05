@@ -2,7 +2,6 @@
 
 ## Overview
 
-Managing users and groups in a Linux environment can be a daunting task, especially when handling multiple users. To simplify this process, you can automate user creation, group assignments, and password management using a Bash script. This article will walk you through creating a script that reads a file containing usernames and group names, creates the necessary users and groups, sets up home directories, and generates secure passwords.
 This bash script automates the process of creating multiple users and groups on a Linux system. It's designed to streamline the onboarding process for new employees or system users. The script reads user information from an input file, creates users with their respective groups, sets random passwords, and logs all actions.
 
 ## Features
@@ -69,21 +68,6 @@ segun; dev,devops,linuxgrp
 - Ensure you have root privileges when running the script
 - Check the log file at `/var/log/user_management.log` for detailed information about each action and any errors
 - Verify that the input file is formatted correctly
-- If groupadd and useradd commands are not found, ensure that you have the necessary packages installed. On Debian-based systems, install the passwd package:
-```
-sudo apt-get update
-sudo apt-get install passwd
-```
-- On Red Hat-based systems, install the shadow-utils package:
-```
-sudo yum install shadow-utils
-```
-- You can also check the paths to these commands:
-```
-which groupadd
-which useradd
-```
-- If they are located in directories like /usr/sbin or /sbin, update the script to use the full paths.
 
 ## Conclusion
 
